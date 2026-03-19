@@ -9,7 +9,7 @@ public final class Triangulo extends Poligono implements Comparable<Triangulo>  
     private Point z;
     
     
-    public Triangulo(String id, String color, int base, int altura, int numLados) {
+    public Triangulo(String id, String color, int base, int altura) {
         super(id, color, base, altura, 3);
         this.y = new Point(0,getAltura());
         this.x = new Point(0,0);

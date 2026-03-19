@@ -10,7 +10,7 @@ public final class Rectangulo extends Poligono implements Movible,Dibujable{
     private Point inferiorDerecha;
    
    
-    public Rectangulo(String id, String color, int base, int altura, int numLados) {
+    public Rectangulo(String id, String color, int base, int altura) {
         super(id, color, base, altura, 4);
         this.superiorIzquierda = new Point(0, getAltura());
         this.inferiorIzquierda = new Point(0,0);

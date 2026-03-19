@@ -10,6 +10,11 @@ public abstract class Figura {
         this.color = color;
     }
 
+    
+    public Figura(String id) {
+        this.id = id;
+    }
+
 
     public Figura() {
     }
