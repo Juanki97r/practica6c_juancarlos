@@ -1,7 +1,7 @@
 package com.example;
 import java.awt.Point;
 
-public class Circulo extends Figura {
+public class Circulo extends Figura implements Movible{
     private int longitudRadio;
     private Point centro = new Point(0,0);
     
@@ -16,8 +16,7 @@ public class Circulo extends Figura {
     
     @Override
     public String toString() {
-        return "Circulo [longitudRadio=" + longitudRadio + ", centro=" + centro + ", getId()=" + getId()
-                + ", getColor()=" + getColor() + "]";
+        return "Circulo [longitudRadio=" + longitudRadio + ", centro=" + centro + super.toString()+ "]";
     }
     public int getLongitudRadio() {
         return longitudRadio;
@@ -37,6 +36,23 @@ public class Circulo extends Figura {
     @Override
     public double area() {
         return Math.PI*Math.pow(longitudRadio, 2);
+    }
+    @Override
+    
+    public void moverIzq(int x) {
+        this.centro = new Point(x,centro.y);
+    }
+    @Override
+    public void moverDer(int x) {
+        this.centro = new Point(x,centro.y);
+    }
+    @Override
+    public void moverArr(int y) {
+        this.centro= new Point(centro.x,y);
+    }
+    @Override
+    public void moverAbj(int y) {
+        this.centro=new Point(centro.x,y);
     }
 
     

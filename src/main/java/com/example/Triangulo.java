@@ -10,7 +10,7 @@ public final class Triangulo extends Poligono implements Comparable<Triangulo>  
     
     
     public Triangulo(String id, String color, int base, int altura, int numLados) {
-        super(id, color, base, altura, numLados);
+        super(id, color, base, altura, 3);
         this.y = new Point(0,getAltura());
         this.x = new Point(0,0);
         this.z = new Point(0,getBase());
@@ -52,6 +52,11 @@ public final class Triangulo extends Poligono implements Comparable<Triangulo>  
     @Override
     public int compareTo(Triangulo o) {
         return Integer.compare(getBase(), o.getBase());
+    }
+
+    @Override
+    public String toString() {
+        return "Triangulo [y=" + y + ", x=" + x + ", z=" + z + super.toString() + "]";
     }
    
    

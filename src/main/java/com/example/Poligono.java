@@ -43,8 +43,7 @@ public abstract class Poligono extends Figura{
 
     @Override
     public String toString() {
-        return "Poligono [base=" + base + ", altura=" + altura + ", numLados=" + numLados + ", getId()=" + getId()
-                + ", getColor()=" + getColor() + "]";
+        return "Poligono [base=" + base + ", altura=" + altura + ", numLados=" + numLados + super.toString() + "]";
     }
 
     
