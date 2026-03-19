@@ -1,0 +1,7 @@
+package com.example;
+
+public class Geometria {
+   public static void main(String[] args) {
+    
+   }
+}
